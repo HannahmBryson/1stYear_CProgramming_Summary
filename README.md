@@ -1,9 +1,10 @@
 # C Programming 1st Year
 
-This is a selection of programming I have done over first year.
+This is a selection of programming I have done over first year of university.
 
-Concepts cover are
--Variables
+Concepts cover are:
+
+- Variables
 - Conditionals
 - Loops
 - Functions
