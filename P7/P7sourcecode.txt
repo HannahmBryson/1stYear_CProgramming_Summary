@@ -1,0 +1,96 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+// function prototypes
+void movejockeyA( int *jockeyA);
+void movejockeyB (int *jockeyB);
+void printCurrentPositions(unsigned int, unsigned int);
+
+int main()
+{ 
+   srand(time(NULL));
+
+   unsigned int jockeyA = 1; // jockeyA current position
+   unsigned int jockeyB = 1; // jockeyB  current position      
+   unsigned int counter = 0; // counter for the for loop controling the race.
+
+ 
+   puts("The Race has started");
+   
+   // loop through the progress on the track
+   while (jockeyA != 100 && jockeyB != 100) { //neither horse has reached the end of the track
+     //^^call functions to move horses on the track and print current positions
+      
+      
+      ++counter;
+   } 
+
+   // determine the winner and print message - one horse/jockey has passed the end as it is outside the loop.
+   if (jockeyA > jockeyB) {
+      //^^print the outcome 
+   } 
+             
+   if (jockeyA < jockeyB) {
+      //^^print the outcome 
+   }
+   else {
+     //^^print the outcome 
+   } 
+
+   printf("iteration: %u", counter);
+} 
+
+// progress for Jockey B
+void movejockeyB( int *jockeyBPtr)
+{ 
+    // ^^generate random number from 1-10 - make sure it is different each time program is run.
+   printf("Jockey B random : %d \n", x);
+   // determine progress
+   if (x >= 1 && x <= 5) { // full speed 50% of the time
+      *jockeyBPtr += 2;
+   } 
+   //^^Test all the rules from the specification.
+    
+   // check boundaries
+   
+   if (*jockeyBPtr < 1) {
+      *jockeyBPtr = 1;
+   } 
+   if (*jockeyBPtr > 100) {
+      *jockeyBPtr = 100;
+   } 
+} 
+
+// progress for the Jockey A
+void movejockeyA( int *jockeyAPtr)
+{ 
+    //^^complete code here
+} 
+
+// display new position each time there is a move.
+void printCurrentPositions(unsigned int jockeyA, unsigned int jockeyB)
+{ 
+    // loop through race
+   for (unsigned int count = 1; count <= 100; ++count) {
+      // print current leader
+        
+      if (count == jockeyA && count == jockeyB) {
+         printf("%s",  "Tie!!");
+      } 
+      else if (count == jockeyB) {
+        //^^implement what should happen in this case 
+      } 
+      else if (count == jockeyA) {
+        //^^implement what should happen in this case 
+      } 
+      else {
+        //^^implement what should happen in this case (print a space)
+      } 
+   }
+
+   puts("");
+} 
+
+
